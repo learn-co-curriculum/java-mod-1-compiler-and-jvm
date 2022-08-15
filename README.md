@@ -62,5 +62,4 @@ Here is a table view of this summary
 ## Conclusion
 
 You should now understand how a Java program is compiled and run by your
-machine. In the next lessons we'll learn garbage collection and memory
-management.
+machine.
