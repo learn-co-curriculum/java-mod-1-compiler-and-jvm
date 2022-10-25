@@ -7,8 +7,8 @@
 
 ## Compilation
 
-In the previous unit, we learned how to run a sample Java program. As you saw,
-it took two steps:
+In the previous unit, we learned how to run a sample Java program. To run a Java
+program it takes two steps:
 
 1. Compile the program
 2. Run the program
@@ -58,6 +58,39 @@ Here is a table view of this summary
 |----------------|-------------|-------------------------|-------------------------------|
 | Tool           | IntelliJ    | Java compiler (`javac`) | Java Virtual Machine (`java`) |
 | File generated | Source code | Bytecode                | Program output                |
+
+As we saw when running our "Hello World" program in the last lesson, IntelliJ
+hides these steps. Let's take a look at how we can run a Java program from the
+command line to further our understanding.
+
+Consider the following sample program:
+
+```java
+public class SimpleSample {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+```
+
+In a terminal window, we can navigate to the directory where this file is at,
+and compile it using the JDK command `javac <filename>`:
+
+```bash
+javac SimpleSample.java
+```
+
+When it is fully compiled, it will create a `SimpleSample.class` file with the
+Java bytecode. We can run the program now using the JDK command
+`java <classname>`:
+
+```bash
+java SimpleSample
+```
+
+In the terminal window, we should see the following output:
+
+![Sample console output](https://curriculum-content.s3.amazonaws.com/java-mod-1/your-first-java-program/module-1-simple-sample-output.png)
 
 ## Conclusion
 
